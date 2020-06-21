@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+    .panel{
+        left: 0vmin;
+        top: 10vmin;
+        padding: 7vmin 7vmin 5vmin 5vmin;
+    }
+    .about img{
+        width: 100%;
+    }
+    .panel h1{
+        font-size: 25px;
+    }
+    .s-bar{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 420px){
+    .intro h1{
+        font-size: 70px;
+    }
+    .panel h1{
+        font-size: 25px;
+    }
+    .panel{
+        position: relative;
+        /*left: 50%;
+        transform: translate(-50%, 0%);
+        padding: 10vmin 7vmin 5vmin;
+        width: 80%;*/
+    }
+    .about img{
+        width: 70%;
+    }
+}

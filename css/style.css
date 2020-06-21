@@ -1,0 +1,187 @@
+/*font-family: 'Overpass', sans-serif;*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #292929;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro:hover ~ #cursor{
+    width: 100px;
+    height: 100px;
+}
+.intro h1{
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
+    font-size: 15vmin;
+}
+
+/*ABout*/
+.about{
+    padding: 20vmin 0;
+    background-color:#f0f0f0 ;
+}
+.about img{
+    width: 70%;
+    border-radius: 5px;
+}
+
+.panel{
+     background-color: white;
+     padding: 10vmin 10vmin;
+     box-shadow: 4px 5px 25px rgba(0, 0, 0, 0.411);
+     position: relative;
+     left: -22vmin;
+     top: 10vmin;
+     border-radius: 5px;
+     /*font-family: 'Overpass', sans-serif;*/
+}
+.panel h1{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    
+}
+/*Skill*/
+.skill{
+    background-image: linear-gradient(to bottom, #dd2475, #ff512f );
+    width: 100%;
+}
+.skill .title{
+    padding-top: 15vmin;
+}
+.skill-bar{
+    padding: 2vmin 0 15vmin;
+}
+.s-bar{
+    height: 25px;
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid white;
+    background: none;
+}
+#sbar{
+    margin: 3vmin 0;
+}
+.s-bar div{
+    background-color: white;
+    height: 100%;
+    border-radius: 50px;
+    /*
+    #dd2475;
+    #ff512f;
+    */
+}
+/*Project*/
+.project{
+    background-color: rgb(224, 224, 224);
+    padding: 10vmin 0;
+}
+.caricature h3{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 8vmin;
+}
+.caricature h3 span{
+    font-size: 11vmin;
+}
+.caricature .row, .artwork .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 4px;
+}
+.caricature .row .column, .artwork .row .column{
+    flex: 33.33%;
+    padding: 0pc 4px;
+}
+.caricature .row .column img, .artwork .row .column img{
+    margin: 8px 0 8px 0;
+    vertical-align: middle;
+    width: 100%;
+}
+.caricature a, .artwork a{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    color: #292929;
+    background: none;
+    font-size: 5vmin;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 5px;
+    border: 5px solid #292929;
+    padding: 2vmin 3vmin;
+}
+.caricature a:hover, .artwork a:hover{
+    background-color: #292929;
+    text-decoration: none;
+    color:white;
+    padding: 1vmin 8vmin;
+}
+.project .link{
+    margin-top: 15px;
+    text-align: center;
+}
+.artwork{
+    margin-top: 10vmin;
+}
+.artwork .title h3{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 8vmin;
+}
+
+
+/*contract*/
+footer{
+    padding: 14vmin 18vmin;
+    background-color: #151515;
+}
+footer h4{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+}
+footer p{
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+}
+.row1, .row2, .row3{
+    margin: 4vmin 0vmin;
+}
+.row2 .form-control{
+    background-color: #292929;
+    border: none;
+}
+.row2 .input-group-append{
+    border: none;
+}
+.row2 .input-group-text{
+    border:none;
+    background-image: linear-gradient(to top, #ff512f, #dd2475);
+    color: white;
+}
+.row3 .icon-group a{
+    color:white;
+    margin: 0px 5px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.2s;
+}
+.row3 .icon-group a:hover{
+    color: #ff512f;
+    font-size: 25px;
+}
