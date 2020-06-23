@@ -54,9 +54,26 @@ header{
 }
 .panel h1{
     font-family: 'Overpass', sans-serif;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
+.about .container .row .column{
+    flex: 50%;
+    padding: 0pc 4px;
+}
+.about .container .row .column img{
+    margin: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.for-photo{
+    padding-top: 20vmin;
+}
+.for-photo h1{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 8vmin;
+}
+
 /*Skill*/
 .skill{
     background-image: linear-gradient(to bottom, #dd2475, #ff512f );
@@ -114,7 +131,7 @@ header{
     vertical-align: middle;
     width: 100%;
 }
-.caricature a, .artwork a{
+.caricature a, .artwork a, .color-project a{
     font-family: 'Overpass', sans-serif;
     font-weight: bold;
     color: #292929;
@@ -126,7 +143,7 @@ header{
     border: 5px solid #292929;
     padding: 2vmin 3vmin;
 }
-.caricature a:hover, .artwork a:hover{
+.caricature a:hover, .artwork a:hover, .color-project a:hover{
     background-color: #292929;
     text-decoration: none;
     color:white;
@@ -143,6 +160,47 @@ header{
     font-family: 'Overpass', sans-serif;
     font-weight: bold;
     font-size: 8vmin;
+}
+.color-project h3{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 8vmin;
+}
+.color-project{
+    padding-top: 10vmin;
+}
+.color-project .row{
+    padding-top:5vmin ;
+    text-align: center;
+    align-items: center;
+}
+.color-project .row .col-md-6 img{
+    padding: 10vmin;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(-0%, -0%);
+}
+.color-project .row .col-md-6 h1{
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(-0%, -0%);
+    color: red;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 10vmin;
+    animation: intro-text 3s infinite;
+}
+@keyframes intro-text{
+    0%{color:red}
+    16%{color: rgb(255, 217, 0);}
+    33%{color:rgb(0, 248, 0)}
+    49%{color: rgb(65, 225, 198);}
+    66%{color: rgb(38, 0, 255);}
+    83%{color:rgb(255, 0, 242)}
+    100%{color: red;}
 }
 
 

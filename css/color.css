@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section1, .section2, .section3, .section4, .section5{
+    background-color: #131313;
+}
+.section1 .row{
+    padding-top:5vmin ;
+    text-align: center;
+    align-items: center;
+}
+.section1 .row .col-md-6 img{
+    padding: 10vmin;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(-0%, -0%);
+}
+.section1 .row .col-md-6 h1{
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(-0%, -0%);
+    color: red;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 10vmin;
+    animation: intro-text 3s infinite;
+}
+@keyframes intro-text{
+    0%{color:red}
+    16%{color: rgb(255, 217, 0);}
+    33%{color:rgb(0, 248, 0)}
+    49%{color: rgb(65, 225, 198);}
+    66%{color: rgb(38, 0, 255);}
+    83%{color:rgb(255, 0, 242)}
+    100%{color: red;}
+}
+
+/*section 2*/
+.section2{
+    padding-top: 15vmin;
+}
+.title2 h1{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 6vmin;
+    color: white;
+}
+.title3 h3 a{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 6vmin;
+    color: white;
+    text-align: center;
+}
+.title3 .col-md-4{
+    text-align: center;
+}
+.title3{
+    padding: 7vmin 0;
+}
+.hue1{
+    background-image: linear-gradient(to right, red, yellow, green, cyan, blue, purple);
+}
+.saturation1{
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(121, 121, 121));
+}
+.value1{
+    background-image: linear-gradient(to right, rgb(255, 255, 255), red, rgb(0, 0, 0));
+}
+.text-color{
+    color: white;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    padding-bottom: 2vmin;
+}
+
+/*section3*/
+.title4 h1, .title6 h1, .title8 h1{
+    padding-top: 15vmin;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 10vmin;
+    color: white;
+}
+.title5 p, .title7 p, .title9 p{
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 6vmin;
+    color: white;
+}
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 20px 2px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+}
+.box2, .box3, .box4{
+    background-color: red;
+    width: 40vmin;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    margin: 15vmin 0 10vmin 0;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 5vmin;
+    color: white;
+}
+#range-hue{
+    margin-bottom: 20vmin;
+    width: 50%;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    -webkit-appearance: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, red, yellow, green, cyan, blue, purple, red);
+}
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+/*Section4*/
+#range-st{
+    margin-bottom: 20vmin;
+    width: 50%;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    -webkit-appearance: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to left, red, rgb(133, 133, 133));
+}
+
+/*Section5*/
+.title9 h2{
+    padding: 10vmin;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
+    font-size: 10vmin;
+    color: white;
+    text-align: center;
+    word-spacing: 20px;
+}
+#range-value{
+    margin-bottom: 20vmin;
+    width: 50%;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    -webkit-appearance: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to left,white, red,black);
+}
+
+/*Footer*/
+footer{
+    padding: 14vmin 18vmin;
+    background-color: #151515;
+}
+footer h4{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+}
+footer p{
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+}
+.row1, .row2, .row3{
+    margin: 4vmin 0vmin;
+}
+.row2 .form-control{
+    background-color: #292929;
+    border: none;
+}
+.row2 .input-group-append{
+    border: none;
+}
+.row2 .input-group-text{
+    border:none;
+    background-image: linear-gradient(to top, #ff512f, #dd2475);
+    color: white;
+}
+.row3 .icon-group a{
+    color:white;
+    margin: 0px 5px;
+    font-size: 20px;
+    position: relative;
+    transition: 0.2s;
+}
+.row3 .icon-group a:hover{
+    color: #ff512f;
+    font-size: 25px;
+}
