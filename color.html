@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color | Md Yaser Arafat Israk</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;400;900&display=swap" rel="stylesheet">
@@ -15,8 +17,56 @@
     <script src="JS/nav.js"></script>
     <script src="JS/color.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/fba3b48802.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--Navigation-->
+  <header id="home" class="container-fluid">
+    <div class="cursor" id="cursor"></div>
+    <!--Menu Icon-->
+    <div onclick="btnFunction(this)">
+        <div onclick="openNav()">
+            <div class="menu-icon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </div>
+    <!--Side Nav-->
+    <div class="side-nav" id="side-nav">
+        <div>
+            <a href="index.html#home">Home</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Color
+            </a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#hue">Hue</a>
+                <a class="dropdown-item" href="#saturation">Saturation</a>
+                <a class="dropdown-item" href="#value">Value</a>
+            </div>  
+            <a href="project.html">Project</a>
+            <a href="#contract">Contract</a>
+        </div>
+    </div>
+    <!--top Nav-->
+    <div class="navigation container-fluid">
+        <div class="nav-link" id="nav-bar-link">
+            <div id="marker"></div>
+            <a href="index.html#home">Home</a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Color
+              </a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#hue">Hue</a>
+                <a class="dropdown-item" href="#saturation">Saturation</a>
+                <a class="dropdown-item" href="#value">Value</a>
+              </div>
+            <a href="Project.html">Project</a>
+            <a href="#contract">Contract</a>
+        </div>
+    </div>
+  </header>
     <section class="section1">
         <div class="container">
             <div class="row">
@@ -88,15 +138,15 @@
             <div class="title7" data-aos="fade-right">
                 <p>
                     Saturation is intensity of <b>Hue</b>. <br>
-                    -Take <span style="color: dodgerblue;">Blue</span> for Example. <br>
+                    -Take <span id="select4" style="color: hsl(0,100%,50%);">Color</span> for Example. <br>
                     -Add some <b>Saturation</b> to it and the <i>intensity</i> really increased. <br>
                     -If we dial back the <b>Saturation</b>, we lose the intensity
                 </p>
             </div>
             <div class="row" data-aos="fade-right">
-                <div class="col-md-4"><div class="box" style="background-color:#FCFCFC">S 0%</div></div>
-                <div class="col-md-4"><div class="box text-white" style="background-color:#807EFC">S 50%</div></div>
-                <div class="col-md-4"><div class="box text-white" style="background-color:#0400FC">S 100%</div></div>
+                <div class="col-md-4"><div class="box" id="select3" style="background-color: hsl(0,0%,50%)">S 0%</div></div>
+                <div class="col-md-4"><div class="box text-white" id="select2" style="background-color:hsl(0,50%,50%)">S 50%</div></div>
+                <div class="col-md-4"><div class="box text-white" id="select1" style="background-color:hsl(0,100%,50%)">S 100%</div></div>
             </div>
             <div data-aos="fade-right">
                 <div class="box3" id="box3">Saturation</div>
@@ -126,9 +176,9 @@
                 </p>
             </div>
             <div class="row" data-aos="fade-right">
-                <div class="col-sm-4"><div class="box text-white" style="background-color: #0957a5">TINT</div></div>
-                <div class="col-sm-4"><div class="box text-white" style="background-color: #1f8fff">NORMAl</div></div>
-                <div class="col-sm-4"><div class="box text-white" style="background-color: #83c1ff">SHADE</div></div>
+                <div class="col-sm-4"><div class="box text-white" id="select7" style="background-color: hsl(0,100%,30%)">TINT</div></div>
+                <div class="col-sm-4"><div class="box text-white" id="select5" style="background-color: hsl(0,100%,50%)">NORMAl</div></div>
+                <div class="col-sm-4"><div class="box text-dark" id="select6" style="background-color: hsl(0,100%,80%)">SHADE</div></div>
             </div>
             <div data-aos="fade-right">
                 <div class="box4" id="box4">Value</div>
@@ -170,7 +220,7 @@
                     <div class="row3" data-aos="fade-right">
                         <h4 class="text-white" data-aos="fade-right">Follow Me</h4>
                         <p class="text-muted" data-aos="fade-right">Let's be social</p>
-                        <p class="text-muted">israkdreamstar@gmail.com</p>
+                        <a href="mailto:israkdreamstar@gmail.com">israkdreamstar@gmail.com</a>
                         <div class="icon-group" data-aos="fade-right">
                             <a href="https://bit.ly/israkfb"><i class="fab fa-facebook"></i></a>
                             <a href="https://bit.ly/israkig"><i class="fab fa-instagram"></i></a>

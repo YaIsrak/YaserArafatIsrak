@@ -81,9 +81,10 @@ header{
 }
 .skill .title{
     padding-top: 15vmin;
+    padding-bottom: 15vmin;
 }
 .skill-bar{
-    padding: 2vmin 0 15vmin;
+    padding: 2vmin 0 5vmin;
 }
 .s-bar{
     height: 25px;
@@ -103,6 +104,14 @@ header{
     #dd2475;
     #ff512f;
     */
+}
+.skill .row img{
+    width: 100%;
+    margin: 5px;
+    border-radius: 5px;
+}
+.skill .row{
+    padding-top: 5vmin;
 }
 /*Project*/
 .project{
